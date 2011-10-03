@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Simple chat o' rama</title>
+    </head>
+    <body>
+        <div>
+            <p>
+                <label for="messageText">Message</label>
+                <input type="text" id="messageText"/>
+            </p>
+            <p>
+                <button id="sendButton">Send</button>
+            </p>
+        </div>
+        <div>
+            <ul id="messages">
+            </ul>
+        </div>
+        <script type="text/javascript"
+                src="http://localhost:2000/socket.io.js"></script>
+        <script type="text/javascript"
+                src="http://code.jquery.com/jquery-1.5.2.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+                var webSocket = new io.Socket('ec2-79-125-62-78.eu-west-1.compute.amazonaws.com', { port: 9999 });
+                webSocket.connect();
+
+                webSocket.on('connect', function() {
+                    $('#messages').append('<li>Connected to the server.</li>');
+                });
+
+                webSocket.on('message', function(message) {
+                    $('#messages').append('<li>' + message + '</li>');
+                });
+
+                webSocket.on('disconnect', function() {
+                    $('#messages').append('<li>Disconnected from the server.</li>');
+                });
+
+                $('#sendButton').bind('click', function() {
+                    var message = $('#messageText').val();
+                    webSocket.send(message);
+                    $('#messageText').val('');
+                });
+            });
+        </script>
+    </body>
+</html>
