@@ -62,7 +62,7 @@
 }
 	
             $(document).ready(function() {
-		connectSocketServer("ws://46.137.159.133:1338/force");          
+		connectSocketServer("http://46.137.159.133:1338/");          
 		$('#sendButton').click(function(){
 		ws.send($('#messageText').value);
 		});
