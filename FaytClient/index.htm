@@ -17,13 +17,13 @@
             </ul>
         </div>
         <script type="text/javascript"
-                src="http://localhost:2000/socket.io.js"></script>
+                src="socket.io/socket.io.js"></script>
         <script type="text/javascript"
                 src="http://code.jquery.com/jquery-1.5.2.js"></script>
 
         <script type="text/javascript">
             $(document).ready(function() {
-                var webSocket = new io.Socket('ec2-79-125-62-78.eu-west-1.compute.amazonaws.com', { port: 9999 });
+                var webSocket = new io.Socket('46.137.159.133', { port: 9999 });
                 webSocket.connect();
 
                 webSocket.on('connect', function() {
