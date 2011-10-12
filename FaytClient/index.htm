@@ -41,8 +41,14 @@
 	  // Send an initial message
 	  ws.send('I am the client and I\'m listening!');
 	  
-	  // Listen for messages
-	  ws.onmessage = function(event) {
+	  // Listen for messages	  
+	  
+	  // To close the socket....
+	  //socket.close()
+	  
+	};
+	
+	ws.onmessage = function(event) {
 	    messageBoard.append('Client received a message:' + event.data);
 	  };
 	  
@@ -50,11 +56,6 @@
 	  ws.onclose = function(event) {
 	    messageBoard.append('Client notified socket has closed:' + event);
 	  };
-	  
-	  // To close the socket....
-	  //socket.close()
-	  
-	};
 }
 	
             $(document).ready(function() {
