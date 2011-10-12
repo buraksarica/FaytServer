@@ -20,6 +20,7 @@
                 src="http://code.jquery.com/jquery-1.5.2.js"></script>
 
         <script type="text/javascript">
+	var ws;
 	    function connectSocketServer(url) {
     var messageBoard = $('#messages');
 
@@ -54,7 +55,8 @@
 }
 	
             $(document).ready(function() {
-		connectSocketServer("http://46.137.159.133:1338");               
+		connectSocketServer("http://46.137.159.133:1338");          
+		$('sendButton').click(function(){ws.send($('messageText').value);});
                 
             });
         </script>
