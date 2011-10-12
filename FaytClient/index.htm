@@ -37,21 +37,24 @@
     ws = new window[support](url);
 
     // when data is comming from the server, this metod is called
-    ws.onmessage = function (evt) {
-        messageBoard.append("# " + evt.data + "<br />");
-        
-        //scrollToBottom(messageBoard);
-    };
-
-    // when the connection is established, this method is called
-    ws.onopen = function () {
-        messageBoard.append('* Connection open<br/>');
-    };
-
-    // when the connection is closed, this method is called
-    ws.onclose = function () {
-        messageBoard.append('* Connection closed<br/>');
-    }
+    ws.onopen = function(event) {  
+	  // Send an initial message
+	  socket.send('I am the client and I\'m listening!');
+	  
+	  // Listen for messages
+	  socket.onmessage = function(event) {
+	    console.log('Client received a message',event);
+	  };
+	  
+	  // Listen for socket closes
+	  socket.onclose = function(event) {
+	    console.log('Client notified socket has closed',event);
+	  };
+	  
+	  // To close the socket....
+	  //socket.close()
+	  
+	};
 }
 	
             $(document).ready(function() {
