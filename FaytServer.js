@@ -1,5 +1,4 @@
 var http = require('http');
-var connect = require('connect');
 
 var server = connect(
   connect.logger()
