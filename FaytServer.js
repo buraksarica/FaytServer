@@ -8,7 +8,7 @@ var server = connect.createServer(
 
 var webSocket = require('socket.io').listen(1337,"10.228.182.253");
 webSocket.on('connection', function(client) {
-    client.send('Please enter a user name ...');
+    client.emit('Please enter a user name ...');
 
     var userName;
     client.on('message', function(message) {
