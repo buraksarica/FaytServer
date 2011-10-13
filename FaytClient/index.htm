@@ -17,13 +17,13 @@
             </ul>
         </div>
         <script type="text/javascript"
-                src="http://46.137.159.133:8080/socket.io/socket.io.js"></script>
+                src="http://46.137.159.133:1337/socket.io/socket.io.js"></script>
         <script type="text/javascript"
                 src="http://code.jquery.com/jquery-1.5.2.js"></script>
 
         <script type="text/javascript">
             $(document).ready(function() {
-                var webSocket = new io.Socket('46.137.159.133', { port: 8080 });
+                var webSocket = new io.Socket('46.137.159.133', { port: 1337 });
                 webSocket.connect();
 
                 webSocket.on('connect', function() {
