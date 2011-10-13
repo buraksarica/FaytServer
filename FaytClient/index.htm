@@ -15,49 +15,34 @@
         <div>
             <ul id="messages">
             </ul>
-        </div>        
-	<script type="text/javascript"
-                src="http://46.137.159.133:1338/socket.io/socket.io.js"></script>
-	
+        </div>
+        <script type="text/javascript"
+                src="http://46.137.159.133:8080/socket.io.js"></script>
         <script type="text/javascript"
                 src="http://code.jquery.com/jquery-1.5.2.js"></script>
 
         <script type="text/javascript">
-	var socket;
-	var messageBoard ;
-function connectSocketServer(url,mport) {
-	messageBoard= $('#messages');
-	
-	    
-
-	    messageBoard.append("* Connecting to server ..<br/>");
-	    // create a new websocket and connect
-	    socket = new io.Socket(url,{
-		  port:mport
-		  });
-			socket.connect(); 
-
-			// Add a connect listener
-			socket.on('connect',function() {
-			  messageBoard.append('Client has connected to the server!');
-			});
-			// Add a connect listener
-			socket.on('message',function(data) {
-			  messageBoard.append('Received a message from the server!'+data);
-			});
-			// Add a disconnect listener
-			socket.on('disconnect',function() {
-			  messageBoard.append('The client has disconnected!');
-			});
-
-}
-	
             $(document).ready(function() {
-		connectSocketServer("46.137.159.133",1338);          
-		$('#sendButton').click(function(){
-		socket.send($('#messageText').value);
-		});
-                
+                var webSocket = new io.Socket('46.137.159.133', { port: 8080 });
+                webSocket.connect();
+
+                webSocket.on('connect', function() {
+                    $('#messages').append('<li>Connected to the server.</li>');
+                });
+
+                webSocket.on('message', function(message) {
+                    $('#messages').append('<li>' + message + '</li>');
+                });
+
+                webSocket.on('disconnect', function() {
+                    $('#messages').append('<li>Disconnected from the server.</li>');
+                });
+
+                $('#sendButton').bind('click', function() {
+                    var message = $('#messageText').val();
+                    webSocket.send(message);
+                    $('#messageText').val('');
+                });
             });
         </script>
     </body>
