@@ -23,8 +23,8 @@
 
         <script type="text/javascript">
             $(document).ready(function() {
-                var webSocket = new io.Socket('46.137.159.133', { port: 1337 });
-                webSocket.connect();
+                var webSocket = new io.connect('http://46.137.159.133:1337/');
+                
 
                 webSocket.on('connect', function() {
                     $('#messages').append('<li>Connected to the server.</li>');
