@@ -40,7 +40,7 @@
 
                 $('#sendButton').bind('click', function() {
                     var message = $('#messageText').val();
-                    webSocket.emit(message);
+                    webSocket.send(message);
                     $('#messageText').val('');
                 });
             });
