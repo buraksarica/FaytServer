@@ -32,7 +32,7 @@ function connectSocketServer(url,mport) {
 
 	    messageBoard.append("* Connecting to server ..<br/>");
 	    // create a new websocket and connect
-	    var socket = new io.Socket(url,{
+	    socket = new io.Socket(url,{
 		  port:mport
 		  });
 			socket.connect(); 
