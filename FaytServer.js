@@ -6,7 +6,7 @@ var server = connect.createServer(
   , connect.static(__dirname + '/FaytClient')
 ).listen(80,"10.228.182.253");
 
-var webSocket = require('socket.io').listen(1337,"10.228.182.253");
+var webSocket = require('socket.io').listen(1337,"127.0.0.1");
 webSocket.on('connection', function(client) {
     client.send('Please enter a user name ...');
 
