@@ -1,0 +1,34 @@
+D:\vurdulu\SuperWebSocket(Drop 8)\FaytWeb\bin\FaytWeb.dll
+D:\vurdulu\SuperWebSocket(Drop 8)\FaytWeb\bin\FaytWeb.pdb
+D:\vurdulu\SuperWebSocket(Drop 8)\FaytWeb\obj\Debug\ResolveAssemblyReference.cache
+D:\vurdulu\SuperWebSocket(Drop 8)\FaytWeb\obj\Debug\FaytWeb.dll
+D:\vurdulu\SuperWebSocket(Drop 8)\FaytWeb\obj\Debug\FaytWeb.pdb
+D:\vurdulu\SuperWebSocket(Drop 8)\FaytWeb\bin\log4net.dll
+D:\vurdulu\SuperWebSocket(Drop 8)\FaytWeb\bin\Newtonsoft.Json.dll
+D:\vurdulu\SuperWebSocket(Drop 8)\FaytWeb\bin\SuperSocket.Common.dll
+D:\vurdulu\SuperWebSocket(Drop 8)\FaytWeb\bin\SuperSocket.Facility.dll
+D:\vurdulu\SuperWebSocket(Drop 8)\FaytWeb\bin\SuperSocket.SocketBase.dll
+D:\vurdulu\SuperWebSocket(Drop 8)\FaytWeb\bin\SuperSocket.SocketEngine.dll
+D:\vurdulu\SuperWebSocket(Drop 8)\FaytWeb\bin\SuperWebSocket.dll
+D:\vurdulu\SuperWebSocket(Drop 8)\FaytWeb\bin\Newtonsoft.Json.pdb
+D:\vurdulu\SuperWebSocket(Drop 8)\FaytWeb\bin\SuperSocket.Common.pdb
+D:\vurdulu\SuperWebSocket(Drop 8)\FaytWeb\bin\SuperSocket.Facility.pdb
+D:\vurdulu\SuperWebSocket(Drop 8)\FaytWeb\bin\SuperSocket.SocketBase.pdb
+D:\vurdulu\SuperWebSocket(Drop 8)\FaytWeb\bin\SuperSocket.SocketEngine.pdb
+D:\ProjectsWorkspace\DSProjects\FaytWeb\FaytWeb\bin\FaytWeb.dll
+D:\ProjectsWorkspace\DSProjects\FaytWeb\FaytWeb\bin\FaytWeb.pdb
+D:\ProjectsWorkspace\DSProjects\FaytWeb\FaytWeb\bin\log4net.dll
+D:\ProjectsWorkspace\DSProjects\FaytWeb\FaytWeb\bin\Newtonsoft.Json.dll
+D:\ProjectsWorkspace\DSProjects\FaytWeb\FaytWeb\bin\SuperSocket.Common.dll
+D:\ProjectsWorkspace\DSProjects\FaytWeb\FaytWeb\bin\SuperSocket.Facility.dll
+D:\ProjectsWorkspace\DSProjects\FaytWeb\FaytWeb\bin\SuperSocket.SocketBase.dll
+D:\ProjectsWorkspace\DSProjects\FaytWeb\FaytWeb\bin\SuperSocket.SocketEngine.dll
+D:\ProjectsWorkspace\DSProjects\FaytWeb\FaytWeb\bin\SuperWebSocket.dll
+D:\ProjectsWorkspace\DSProjects\FaytWeb\FaytWeb\bin\Newtonsoft.Json.pdb
+D:\ProjectsWorkspace\DSProjects\FaytWeb\FaytWeb\bin\SuperSocket.Common.pdb
+D:\ProjectsWorkspace\DSProjects\FaytWeb\FaytWeb\bin\SuperSocket.Facility.pdb
+D:\ProjectsWorkspace\DSProjects\FaytWeb\FaytWeb\bin\SuperSocket.SocketBase.pdb
+D:\ProjectsWorkspace\DSProjects\FaytWeb\FaytWeb\bin\SuperSocket.SocketEngine.pdb
+D:\ProjectsWorkspace\DSProjects\FaytWeb\FaytWeb\obj\Debug\ResolveAssemblyReference.cache
+D:\ProjectsWorkspace\DSProjects\FaytWeb\FaytWeb\obj\Debug\FaytWeb.dll
+D:\ProjectsWorkspace\DSProjects\FaytWeb\FaytWeb\obj\Debug\FaytWeb.pdb

@@ -1,0 +1,60 @@
+﻿body
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+#box
+{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #ADADAD;
+    border: 1px solid black;
+    border-right: 3px solid black;
+    left: 0px;
+    top: 0px;
+}
+
+#box_lpunch
+{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background-color: #ADADAD;
+    left: 40px;
+    top: -10px;
+    display: none;
+}
+
+#box_lpunch_hand
+{
+    position: relative;
+    width: 15px;
+    height: 15px;
+    background-color: #ADADAD;
+    left: 15px;
+    top: 2px;
+}
+
+#box_rpunch
+{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background-color: #ADADAD;
+    left: 40px;
+    top: 40px;
+    display: none;
+}
+
+#box_rpunch_hand
+{
+    position: relative;
+    width: 15px;
+    height: 15px;
+    background-color: #ADADAD;
+    left: 15px;
+    top: 2px;
+}
